@@ -1,4 +1,4 @@
-# Mojo
+# Mojo setup
 ## Install Modular CLI
 ```sh
 curl https://get.modular.com | sh - && \
