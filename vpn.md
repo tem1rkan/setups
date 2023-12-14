@@ -1,7 +1,9 @@
 # Wireguard (VPN) setup
 ## Server
 ```sh
-# apt install wireguard-tools
+apt install wireguard-tools
+```
+```sh
 umask 077 && wg genkey | tee /etc/wireguard/server_private_key | wg pubkey > /etc/wireguard/server_public_key
 ```
 ```ini
@@ -31,7 +33,9 @@ systemctl enable --now wg-quick@wg0 && ufw allow 51830/udp && sysctl -w net.ipv4
 
 ## Client
 ```sh
-# apt install wireguard-tools
+apt install wireguard-tools
+```
+```sh
 umask 077 && wg genkey | tee /etc/wireguard/client_private_key | wg pubkey | tee /etc/wireguard/client_public_key
 ```
 ```ini
