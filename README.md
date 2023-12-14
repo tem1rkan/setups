@@ -1,5 +1,5 @@
 # setups
-[VPN](Wireguard (VPN))
+[VPN](#Wireguard (VPN))
 
 # Wireguard (VPN)
 ## Server
