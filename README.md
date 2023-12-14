@@ -1,7 +1,9 @@
 # setups
-[VPN](#Wireguard (VPN))
+- [VPN](#VPN)
+- [Mojo](#Mojo)
 
-# Wireguard (VPN)
+
+# VPN
 ## Server
 ```sh
 # apt install wireguard-tools
@@ -53,4 +55,21 @@ AllowedIPs = 0.0.0.0/0
 ```
 ```sh
 systemctl enable --now wg-quick@wg0
+```
+
+# Mojo
+## Install Modular CLI
+```sh
+curl https://get.modular.com | sh - && \
+modular auth mut_03d3496140fc44babc61bf650245d960
+```
+
+## Install Mojo SDK
+```sh
+modular install mojo
+```
+
+## Install Mojo extension for VS Code
+```sh
+ext install modular-mojotools.vscode-mojo
 ```
