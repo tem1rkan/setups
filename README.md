@@ -1,1 +1,2 @@
 # setups
+[VPN](vpn.md)
