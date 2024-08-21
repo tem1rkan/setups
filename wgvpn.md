@@ -11,7 +11,7 @@ PrivateKey = server_private_key
 PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE; ip6tables -A FORWARD -i %i -j ACCEPT; ip6tables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
 PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o ens3 -j MASQUERADE; ip6tables -D FORWARD -i %i -j ACCEPT; ip6tables -t nat -D POSTROUTING -o ens3 -j MASQUERADE
 
-[Peer 1]
+[Peer]
 AllowedIPs = 10.0.0.2/32
 PublicKey = client_public_key
 PresharedKey = preshared_key
